@@ -29,19 +29,19 @@ class AMBContext: AMBCoreContext {
     }
 
     func resolve() {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK))
+        self.sendResult(CDVPluginResult(status: .ok))
     }
 
     func resolve(_ msg: Bool) {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK, messageAs: msg))
+        self.sendResult(CDVPluginResult(status: .ok, messageAs: msg))
     }
 
     func resolve(_ msg: UInt) {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK, messageAs: msg))
+        self.sendResult(CDVPluginResult(status: .ok, messageAs: msg))
     }
 
     func resolve(_ data: [String: Any]) {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK, messageAs: data))
+        self.sendResult(CDVPluginResult(status: .ok, messageAs: data))
     }
 
     func reject(_ msg: String) {

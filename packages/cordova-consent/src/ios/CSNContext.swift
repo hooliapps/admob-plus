@@ -86,23 +86,23 @@ class CSNContext {
     }
 
     func success() {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK))
+        self.sendResult(CDVPluginResult(status: .ok))
     }
 
     func success(_ message: Bool) {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK, messageAs: message))
+        self.sendResult(CDVPluginResult(status: .ok, messageAs: message))
     }
 
     func success(_ message: Int) {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK, messageAs: message))
+        self.sendResult(CDVPluginResult(status: .ok, messageAs: message))
     }
 
     func success(_ message: UInt) {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK, messageAs: message))
+        self.sendResult(CDVPluginResult(status: .ok, messageAs: message))
     }
 
     func success(_ message: [String: Any]) {
-        self.sendResult(CDVPluginResult(status: CDVCommandStatus_OK, messageAs: message))
+        self.sendResult(CDVPluginResult(status: .ok, messageAs: message))
     }
 
     func error() {

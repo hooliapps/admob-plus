@@ -183,7 +183,7 @@ class AMBPlugin: CDVPlugin {
     }
 
     func emit(_ eventName: String, data: Any = NSNull()) {
-        let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: ["type": eventName, "data": data])
+        let result = CDVPluginResult(status: .ok, messageAs: ["type": eventName, "data": data])
         result?.setKeepCallbackAs(true)
         self.commandDelegate.send(result, callbackId: readyCallbackId)
     }
