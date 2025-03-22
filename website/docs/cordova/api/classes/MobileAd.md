@@ -58,9 +58,11 @@ packages/cordova/src/www/ads/base.ts:20
 
 ### adUnitId
 
-> `get` **adUnitId**(): `string`
+#### Get Signature
 
-#### Returns
+> **get** **adUnitId**(): `string`
+
+##### Returns
 
 `string`
 
@@ -168,7 +170,7 @@ packages/cordova/src/www/ads/base.ts:72
 
 ### getAdById()
 
-> `static` **getAdById**(`id`): [`MobileAd`](MobileAd.md) \<[`MobileAdOptions`](../type-aliases/MobileAdOptions.md)\>
+> `static` **getAdById**(`id`): [`MobileAd`](MobileAd.md)\<[`MobileAdOptions`](../type-aliases/MobileAdOptions.md)\>
 
 #### Parameters
 
@@ -176,7 +178,7 @@ packages/cordova/src/www/ads/base.ts:72
 
 #### Returns
 
-[`MobileAd`](MobileAd.md) \<[`MobileAdOptions`](../type-aliases/MobileAdOptions.md)\>
+[`MobileAd`](MobileAd.md)\<[`MobileAdOptions`](../type-aliases/MobileAdOptions.md)\>
 
 #### Defined in
 

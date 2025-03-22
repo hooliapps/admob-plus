@@ -1,7 +1,7 @@
 {
   "name": "pkg-proxy",
   "description": "Query package.json without boilerplate",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "type": "module",
   "dependencies": {
     "find-up": "^7.0.0",
@@ -11,9 +11,9 @@
   "devDependencies": {
     "@tsconfig/node18": "^18.2.4",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.12.7",
+    "@types/node": "^22.9.0",
     "ts-node": "^10.9.2",
-    "typescript": "~5.4.5"
+    "typescript": "~5.6.3"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -27,7 +27,8 @@
   "repository": "admob-plus/admob-plus",
   "main": "lib/index.js",
   "scripts": {
-    "prepublishOnly": "nx build",
+    "prepublishOnly": "turbo run build",
+    "build": "tsc -b",
     "test": "tsc --noEmit"
   },
   "types": "lib/index.d.ts"
